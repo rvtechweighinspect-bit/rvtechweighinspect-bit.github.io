@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    /* Copy the same CSS from index.html */
     body {margin:0; font-family:Arial,sans-serif; background-color:#ffffff; color:#231917;}
     nav {background-color:#ffffff; border-bottom:1px solid #b5b6ba;}
     .nav {list-style:none; display:flex; justify-content:center; padding:14px 0; margin:0; flex-wrap:wrap;}
@@ -14,13 +13,14 @@
     .nav a {text-decoration:none; color:#231917; font-weight:bold; font-size:16px;}
     .nav a:hover {text-decoration:underline;}
     .container {max-width:900px; margin:40px auto; padding:40px 30px; background-color:#f5f5f5; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.05);}
-    h1 {font-size:36px; margin-bottom:20px; color:#231917;}
-    h2 {font-size:24px; margin-top:30px; color:#231917;}
+    h1 {font-size:36px; margin-bottom:30px; color:#231917; text-align:center;}
+    h2 {font-size:28px; margin-top:40px; color:#231917; border-bottom:2px solid #b5b6ba; padding-bottom:8px;}
     p, li {font-size:18px; line-height:1.6; margin-bottom:15px; color:#231917;}
     ul {margin-left:20px; margin-bottom:20px;}
     footer {border-top:1px solid #b5b6ba; text-align:center; padding:16px; font-size:14px; margin-top:40px;}
     footer a {color:#231917; text-decoration:none;}
     footer a:hover {text-decoration:underline;}
+    .service-section {margin-top:30px;}
   </style>
 </head>
 
@@ -38,14 +38,43 @@
 
 <div class="container">
   <h1>Our Services</h1>
-  <p>We provide mobile RV weighing services directly at your location. Our process includes:</p>
-  <ul>
-    <li>Weighing each wheel individually for accurate load assessment</li>
-    <li>Providing a detailed weight report for your RV</li>
-    <li>Reviewing results and discussing any safety concerns</li>
-    <li>Guidance on tire inflation and load balancing</li>
-    <li>Recommendations for weight reduction or adjustment if needed</li>
-  </ul>
+
+  <!-- Four Corner Weighing -->
+  <section class="service-section">
+    <h2>Four Corner Weighing</h2>
+    <p>Our mobile RV weighing service comes to you, providing accurate, wheel-by-wheel measurements to ensure your RV is safe and properly loaded.</p>
+    <ul>
+      <li>Individual wheel measurements for precise load info</li>
+      <li>Detailed report with tire and load guidance</li>
+      <li>Tips on balancing and reducing weight for safer travel</li>
+      <li>Tire inflation and condition checks</li>
+    </ul>
+  </section>
+
+  <!-- RV Inspections -->
+  <section class="service-section">
+    <h2>RV Inspections</h2>
+    <p>We provide thorough inspections to identify potential safety or maintenance issues, giving you peace of mind before every trip.</p>
+    <ul>
+      <li>Structural checks and safety evaluations</li>
+      <li>Tire, brake, and suspension inspections</li>
+      <li>Electrical, plumbing, and appliance assessments</li>
+      <li>Pre-trip readiness and travel safety recommendations</li>
+    </ul>
+  </section>
+
+  <!-- Mobile RV Repairs -->
+  <section class="service-section">
+    <h2>Mobile RV Repairs</h2>
+    <p>Our on-site mobile repair services handle minor repairs and maintenance at your location, saving you time and avoiding costly towing.</p>
+    <ul>
+      <li>Tire and wheel services</li>
+      <li>Brake adjustments and minor mechanical repairs</li>
+      <li>Electrical troubleshooting and plumbing fixes</li>
+      <li>Quick, on-site solutions to get you back on the road safely</li>
+    </ul>
+  </section>
+
 </div>
 
 <footer>
