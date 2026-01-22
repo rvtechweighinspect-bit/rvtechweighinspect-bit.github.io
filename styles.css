@@ -1,134 +1,145 @@
+/* Base layout */
 body {
-  background-color: pink !important;
-}
-/* =========================
-   GLOBAL RESET
-========================= */
-* {
-  box-sizing: border-box;
   margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  color: #222;
+  font-family: Arial, sans-serif;
   background-color: #ffffff;
+  color: #231917;
 }
 
-/* =========================
-   HEADER & NAVIGATION
-========================= */
-header {
-  background-color: #ffffff;
-  border-bottom: 2px solid #b5b6ba;
-}
-
+/* Navigation */
 nav {
-  max-width: 1200px;
-  margin: auto;
+  background-color: #ffffff;
+  border-bottom: 1px solid #b5b6ba;
 }
 
-nav ul {
+.nav {
   list-style: none;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  padding: 14px 0;
+  margin: 0;
+  flex-wrap: wrap;
 }
 
-nav ul li {
+.nav li {
+  margin: 8px 16px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #231917;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown */
+.dropdown {
   position: relative;
 }
 
-nav ul li a {
-  display: block;
-  padding: 14px 18px;
-  text-decoration: none;
-  color: #003a5d;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  background-color: #f0f0f0;
-}
-
-/* =========================
-   DROPDOWN MENU
-========================= */
-nav ul li ul {
+.dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   background-color: #ffffff;
-  min-width: 260px;
   border: 1px solid #b5b6ba;
+  border-radius: 8px;
+  list-style: none;
+  padding: 10px 0;
+  min-width: 260px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   z-index: 1000;
 }
 
-nav ul li:hover > ul {
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  font-weight: normal;
+  color: #231917;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown:hover .dropdown-menu {
   display: block;
 }
 
-nav ul li ul li {
-  width: 100%;
-}
-
-nav ul li ul li a {
-  padding: 12px 16px;
-  font-weight: normal;
-  color: #003a5d;
-}
-
-nav ul li ul li a:hover {
-  background-color: #e8e8e8;
-}
-
-/* =========================
-   MAIN CONTENT AREA
-========================= */
-main {
-  max-width: 1100px;
+/* Page container */
+.container {
+  max-width: 900px;
   margin: 40px auto;
-  padding: 0 20px;
+  padding: 40px 30px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
+/* Home page special layout */
+.home-container {
+  text-align: center;
+}
+
+/* Typography */
 h1 {
-  color: #003a5d;
+  font-size: 36px;
   margin-bottom: 20px;
+  color: #231917;
 }
 
 h2 {
-  color: #003a5d;
+  font-size: 24px;
   margin-top: 30px;
-  margin-bottom: 10px;
+  color: #231917;
 }
 
-p {
+p,
+li {
+  font-size: 18px;
+  line-height: 1.6;
   margin-bottom: 15px;
+  color: #231917;
 }
 
-/* =========================
-   DEFINITION / RESOURCE LISTS
-========================= */
-.definition {
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Logo */
+.logo {
+  max-width: 250px;
+  height: auto;
   margin-bottom: 25px;
-}
-
-.definition strong {
   display: block;
-  font-size: 1.05em;
-  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* Footer */
 footer {
-  margin-top: 60px;
-  padding: 20px;
+  border-top: 1px solid #b5b6ba;
   text-align: center;
-  border-top: 2px solid #b5b6ba;
-  color: #555;
-  font-size: 0.9em;
+  padding: 16px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #231917;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
